@@ -1,0 +1,62 @@
+[
+    {
+        "question": "What is the minimum attendance requirement for students?",
+        "topic": "Attendance"
+    },
+    {
+        "question": "What is the grading system used for the B.Tech program?",
+        "topic": "Grading"
+    },
+    {
+        "question": "How is SGPA calculated?",
+        "topic": "SGPA"
+    },
+    {
+        "question": "How is CGPA calculated?",
+        "topic": "CGPA"
+    },
+    {
+        "question": "What are the requirements for awarding the B.Tech degree?",
+        "topic": "Degree Requirements"
+    },
+    {
+        "question": "How are formative and summative assessments conducted?",
+        "topic": "Assessment"
+    },
+    {
+        "question": "What are the rules for supplementary examinations?",
+        "topic": "Supplementary Examination"
+    },
+    {
+        "question": "What is the procedure for changing the branch?",
+        "topic": "Branch Change"
+    },
+    {
+        "question": "What are the requirements for earning Research Honours?",
+        "topic": "Research Honours"
+    },
+    {
+        "question": "What happens when a student fails a course?",
+        "topic": "Course Failure"
+    },
+    {
+        "question": "How many credits are required for completing the B.Tech program?",
+        "topic": "Credits"
+    },
+    {
+        "question": "What are the rules for promotion to the next semester?",
+        "topic": "Promotion"
+    },
+    {
+        "question": "What is the procedure for course registration?",
+        "topic": "Course Registration"
+    },
+    {
+        "question": "What are the rules for lateral entry students?",
+        "topic": "Lateral Entry"
+    },
+    {
+        "question": "Who is the current Vice Chancellor of Vignan University?",
+        "topic": "Out of Document"
+    }
+]

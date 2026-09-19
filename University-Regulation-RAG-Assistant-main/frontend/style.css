@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 900px;
+    height: 90vh;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #1f4e79;
+    color: white;
+    padding: 16px 25px;
+    border-bottom: 3px solid #163a5c;
+}
+
+.university-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.university-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+
+.chat-header h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.chat-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 75%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background: #eef3f8;
+    color: #222;
+}
+
+.user-message {
+    background: #1f4e79;
+    color: white;
+    margin-left: auto;
+}
+
+.input-area {
+    display: flex;
+    padding: 18px;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+#question-input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+#question-input:focus {
+    border-color: #1f4e79;
+}
+
+#send-button {
+    padding: 14px 25px;
+    background: #1f4e79;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#send-button {
+    padding: 14px 25px;
+    background: #1f4e79;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#send-button:hover {
+    background: #163a5c;
+}
+
+#send-button:active {
+    transform: scale(0.97);
+}
+.source-section {
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #d5dce3;
+}
+
+.source-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.source-item {
+    background: white;
+    border: 1px solid #d5dce3;
+    border-radius: 7px;
+    padding: 8px 10px;
+    margin-top: 6px;
+    font-size: 13px;
+}
+.suggested-questions {
+    margin-top: 5px;
+    padding: 15px;
+    background: #f8fafc;
+    border: 1px solid #e1e6eb;
+    border-radius: 10px;
+}
+
+.suggested-questions p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.suggestion-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: white;
+    border: 1px solid #d5dce3;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.suggestion-button:hover {
+    background: #f0f5fa;
+}
+@media (max-width: 600px) {
+
+    body {
+        align-items: stretch;
+    }
+
+    .chat-container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .chat-header {
+        padding: 15px;
+    }
+
+    .university-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .chat-header h1 {
+        font-size: 20px;
+    }
+
+    .chat-header p {
+        font-size: 12px;
+    }
+
+    .chat-box {
+        padding: 15px;
+    }
+
+    .message {
+        max-width: 90%;
+    }
+
+    .input-area {
+        padding: 12px;
+    }
+
+    #question-input {
+        min-width: 0;
+    }
+
+    #send-button {
+        padding: 14px 18px;
+    }
+}
+.thinking-message {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.thinking-dot {
+    width: 7px;
+    height: 7px;
+    background: #1f4e79;
+    border-radius: 50%;
+    animation: thinking 1.2s infinite ease-in-out;
+}
+
+.thinking-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.thinking-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes thinking {
+    0%, 60%, 100% {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+}
+#clear-button {
+    padding: 14px 18px;
+    background: white;
+    color: #1f4e79;
+    border: 1px solid #1f4e79;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#clear-button:hover {
+    background: #1f4e79;
+    color: white;
+}

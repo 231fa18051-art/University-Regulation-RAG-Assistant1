@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University Regulation Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+
+    <div class="university-info">
+
+        <img src="vignan-logo.png" class="university-logo" alt="Vignan University">
+
+        <div>
+            <h1>Vignan University</h1>
+            <p>University Regulation Assistant</p>
+        </div>
+
+    </div>
+
+</header>
+
+
+        <main id="chat-box" class="chat-box">
+
+            <div class="message bot-message welcome-message">
+    <strong>Welcome to Vignan University Regulation Assistant 👋</strong>
+    <br><br>
+
+    I can help you find information from the
+    university regulations.
+    <br><br>
+
+    You can ask about attendance, examinations,
+    grading, credits, branch change, degree requirements,
+    and other academic regulations.
+    <br><br>
+
+    How can I help you?
+</div>
+<div class="suggested-questions">
+
+    <p>Try asking:</p>
+
+    <button class="suggestion-button">
+        What is the minimum attendance requirement?
+    </button>
+
+    <button class="suggestion-button">
+        How is SGPA calculated?
+    </button>
+
+    <button class="suggestion-button">
+        What are the rules for supplementary examinations?
+    </button>
+
+    <button class="suggestion-button">
+        How can I change my branch?
+    </button>
+
+</div>
+
+        </main>
+
+
+        <div class="input-area">
+
+    <input
+        type="text"
+        id="question-input"
+        placeholder="Ask a question..."
+    >
+
+    <button id="send-button">
+        Send
+    </button>
+
+    <button id="clear-button">
+        Clear
+    </button>
+
+</div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+
+chroma_db/
+embeddings.json
+chunks.json
+regulations_data.json
+
+.env
+.vscode/
+
+documents/*.pdf
